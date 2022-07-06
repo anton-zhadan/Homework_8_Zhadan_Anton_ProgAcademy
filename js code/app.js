@@ -17,7 +17,7 @@ drawCircles.onclick = function() {
     let diametr = document.createElement('input');
             
     diametr.setAttribute('type', 'text');
-        diametr.value = 'Введіть бажаний діаметр кіл';
+        diametr.placeholder = 'Введіть бажаний діаметр кіл';
         diametr.style.marginLeft = '100px';
         diametr.style.borderColor = 'red';
         diametr.style.borderRadius = '20px';
@@ -44,8 +44,8 @@ drawCircles.onclick = function() {
                     
             for (let i=0; i < 100; i++) {
                 let circle = document.createElement ('div');
-                    circle.style.width = 10 * diametr.value + 'px';
-                    circle.style.height = 10 * diametr.value + 'px';
+                    circle.style.width = diametr.value + 'px';
+                    circle.style.height = diametr.value + 'px';
                     circle.style.backgroundColor = difColor();
                     circle.style.borderRadius = '50%';
                     circle.style.display = 'inline-block';
